@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | AIT Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&family=Sarabun:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', 'Sarabun', sans-serif; 
+            color: #2d3748;
+            scroll-behavior: smooth;
+        }
+        .text-navy { color: #0f172a; }
+        .bg-navy { background-color: #0f172a; }
+        .accent-orange { color: #f97316; }
+        .bg-accent { background-color: #f97316; }
+        /* สไตล์สำหรับเส้น Timeline ที่ดูบางเบา */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            background: #e2e8f0;
+        }
+
+        .hero-bg {
+            /* ใช้ Overlay ที่มืดขึ้นเพื่อให้ข้อความสีขาวดูแพง */
+            background-image: linear-gradient(rgba(10, 20, 40, 0.75), rgba(10, 20, 40, 0.75)), 
+                              url('https://images.unsplash.com/photo-1516937941344-00b4e0337589');
+            background-size: cover;
+            background-position: center;
+        }
+        /* เส้นใต้เมนูแบบเรียบๆ */
+        .nav-link { position: relative; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #4af53a;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+<header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <div class="flex items-center space-x-3">
+            
+            <a href="/" class="flex items-center">
+                <img src="AITlogo.jpg" 
+                     alt="AIT Engineering & Service Logo" 
+                     class="h-10 w-auto object-contain"> </a>
+
+            <div class="h-6 w-[1px] bg-slate-200"></div>
+        </div>    
+
+            <nav class="hidden lg:flex space-x-8 text-[12px] font-semibold text-slate-600 uppercase tracking-wider">
+                <a href="index.html" class="nav-link text-blue-700">Home</a>
+                <a href="about.html" class="nav-link hover:text-blue-700 transition">About Us</a>
+                <a href="pro1.html" class="nav-link hover:text-blue-700 transition">Products <i class="fa-solid fa-angle-down text-[10px] ml-1"></i></a>
+                <a href="videos.html" class="nav-link hover:text-blue-700 transition">Videos</a>
+                <a href="activities.html" class="nav-link hover:text-blue-700 transition">Activities</a>
+                <a href="contact.html" class="nav-link hover:text-blue-700 transition">Contact</a>
+            </nav>
+
+            <button class="text-slate-400 hover:text-blue-600 transition p-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </header>
+
+    <header class="py-28 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-accent-orange font-bold tracking-[0.4em] text-[10px] uppercase mb-4">Established 2002</p>
+            <h1 class="text-5xl md:text-6xl font-extralight text-navy tracking-tighter mb-8">
+                Company <span class="font-bold">Profile</span>
+            </h1>
+            <div class="w-12 h-[1px] bg-gray-300 mx-auto"></div>
+        </div>
+    </header>
+
+    <section class="pb-24 px-6 max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <div class="aspect-[4/5] bg-gray-50 overflow-hidden rounded-2xl shadow-2xl shadow-gray-200/50">
+                    <img src="Boss-2.png" alt="Management" class="w-auto h-auto object-cover transition-all duration-1000">
+                </div>
+                <div class="absolute -bottom-10 -right-6 md:right-10 bg-white p-8 shadow-xl max-w-xs rounded-xl border-l-4 border-accent-orange">
+                    <p class="text-gray-500 text-sm italic leading-relaxed">
+                        "We believe in values of people. We make customer trust us on quality work."
+                    </p>
+                    <p class="text-navy font-bold text-[10px] mt-4 uppercase tracking-widest">— Management Message</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <div>
+                    <h2 class="text-[10px] font-black text-gray-400 uppercase tracking-[0.3em] mb-4">Who We Are</h2>
+                    <p class="text-xl text-gray-600 font-light leading-relaxed">
+                        AIT Engineering and Service aims to be Thailand's leading provider for <span class="text-navy font-semibold">Field Instruments and Actuation Technologies</span>. We bridge the gap between complex engineering and sustainable industry solutions.
+                    </p>
+                </div>
+
+                <div class="grid gap-6">
+                    <div class="group p-6 border border-gray-100 rounded-2xl hover:border-orange-100 hover:bg-orange-50/30 transition-all">
+                        <h3 class="text-navy font-bold text-xs uppercase tracking-widest mb-2 flex items-center gap-2">
+                            Vision <span class="w-4 h-[1px] bg-orange-500"></span>
+                        </h3>
+                        <p class="text-gray-500 font-light italic">"Creative Innovations for Sustainable Industry"</p>
+                    </div>
+                    
+                    <div class="group p-6 border border-gray-100 rounded-2xl hover:border-blue-100 hover:bg-blue-50/30 transition-all">
+                        <h3 class="text-navy font-bold text-xs uppercase tracking-widest mb-4">Our Values</h3>
+                        <div class="flex flex-wrap gap-x-6 gap-y-2">
+                            <span class="text-xs text-gray-400 font-medium tracking-tight">• Family Culture</span>
+                            <span class="text-xs text-gray-400 font-medium tracking-tight">• Honesty & Integrity</span>
+                            <span class="text-xs text-gray-400 font-medium tracking-tight">• Continuous Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#fafafa] px-6">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-24">
+            <p class="text-orange-500 font-bold text-[10px] uppercase tracking-[0.4em] mb-4">Our Legacy</p>
+            <h2 class="text-4xl font-light text-[#0f172a] tracking-tight">
+                History & <span class="font-bold underline decoration-orange-500 decoration-4 underline-offset-8">Milestones</span>
+            </h2>
+        </div>
+
+        <div class="space-y-32 relative">
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-gray-200"></div>
+
+            <div class="relative grid md:grid-cols-2 gap-12 items-start">
+                <div class="md:text-right relative">
+                    <span class="text-8xl font-black text-gray-100 absolute -top-16 md:-right-10 right-0 -z-10">2002</span>
+                    <h3 class="text-[#0f172a] text-xl font-bold uppercase tracking-widest mb-4">The Foundation</h3>
+                    <p class="text-gray-500 leading-relaxed font-light">
+                        AIT Engineering and Service Co., Ltd. was established in September <span class="text-orange-500 font-bold mr-2">2002.</span> Our core mission from day one has been to become Thailand's leading instrument and service provider for Field Instruments, Analyzers, Transmitters, and Actuation Technologies across diverse industrial sectors. We committed ourselves to providing high-quality engineering and services to meet the rapidly growing demands of our customers.
+                    </p>
+                </div>
+                <div class="hidden md:block"></div>
+            </div>
+
+            <div class="relative grid md:grid-cols-2 gap-12 items-start">
+                <div class="hidden md:block"></div>
+                <div class="relative">
+                    <span class="text-8xl font-black text-gray-100 absolute -top-16 left-0 -z-10">2006</span>
+                    <h3 class="text-[#0f172a] text-xl font-bold uppercase tracking-widest mb-4">Strategic Expansion</h3>
+                    <div class="space-y-6 text-gray-500 leading-relaxed font-light">
+                        <p>
+                            <span class="text-orange-500 font-bold mr-2">2005:</span> 
+                            Opened a new office in the Banpong area, strategically located near SCG Packaging, to enhance our service response time and support local industrial operations.
+                        </p>
+                        <p>
+                            <span class="text-orange-500 font-bold mr-2">2006:</span> 
+                            Achieved a significant milestone by being appointed by <strong>Emerson Process Management</strong> as the official local business partner specializing in the Pulp and Paper industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative grid md:grid-cols-2 gap-12 items-start">
+                <div class="md:text-right relative">
+                    <span class="text-8xl font-black text-gray-100 absolute -top-16 md:-right-10 right-0 -z-10">2012</span>
+                    <h3 class="text-[#0f172a] text-xl font-bold uppercase tracking-widest mb-4">Regional Growth</h3>
+                    <div class="space-y-6 text-gray-500 leading-relaxed font-light">
+                        <p>
+                            <span class="text-orange-500 font-bold mr-2">2010:</span> 
+                            Expanded our footprint to Northeast Thailand by establishing a dedicated office in Khon Kaen, ensuring comprehensive support for customers in the region.
+                        </p>
+                        <p>
+                            <span class="text-orange-500 font-bold mr-2">2012:</span> 
+                            Entered the Eastern Economic Corridor by renting an office in Rayong, focusing on the sales and service of high-performance valves and actuators.
+                        </p>
+                    </div>
+                </div>
+                <div class="hidden md:block"></div>
+            </div>
+
+            <div class="relative grid md:grid-cols-2 gap-12 items-start">
+                <div class="hidden md:block"></div>
+                <div class="relative">
+                    <span class="text-8xl font-black text-gray-100 absolute -top-16 left-0 -z-10">2015</span>
+                    <h3 class="text-[#0f172a] text-xl font-bold uppercase tracking-widest mb-4">Standard & Excellence</h3>
+                    <div class="space-y-4 text-gray-500 leading-relaxed font-light">
+                        <p>In <span class="text-orange-500 font-bold mr-2">2013,</span> we began implementing ISO Standards across all company operations to ensure global-level service quality. This was followed by applying for the Bureau Veritas Seal in <span class="text-orange-500 font-bold mr-2">2014.</span></p>
+                        <p>By <span class="text-orange-500 font-bold mr-2">2015,</span> we successfully passed the <strong>Bureau Veritas Certification</strong> for Sales, Installation, and After-sales services. In the same year, we relocated our Rayong office to its current location, featuring a brand new 500 sq.m professional workshop.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative grid md:grid-cols-2 gap-12 items-start">
+                <div class="md:text-right relative">
+                    <span class="text-8xl font-black text-gray-100 absolute -top-16 md:-right-10 right-0 -z-10">2020</span>
+                    <h3 class="text-[#0f172a] text-xl font-bold uppercase tracking-widest mb-4">Global Reach</h3>
+                    <p class="text-gray-500 leading-relaxed font-light">
+                        AIT continues to build international trust. We signed official partnership contracts with <strong>PMT S.r.l</strong> in <span class="text-orange-500 font-bold mr-2">2018</span> and <strong>Airaghi S.r.l.</strong> in <span class="text-orange-500 font-bold mr-2">2020</span>, further strengthening our portfolio with world-class industrial solutions.
+                    </p>
+                </div>
+                <div class="hidden md:block"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-x-16 gap-y-8 grayscale opacity-30 hover:opacity-100 transition-all duration-700 items-center">
+                <span class="text-[10px] font-bold tracking-[0.3em]">BETTIS</span>
+                <span class="text-[10px] font-bold tracking-[0.3em]">ROSEMOUNT</span>
+                <span class="text-[10px] font-bold tracking-[0.3em]">MICROMOTION</span>
+                <span class="text-[10px] font-bold tracking-[0.3em]">SHAFER</span>
+                <span class="text-[10px] font-bold tracking-[0.3em]">HYTORK</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 text-center border-t border-gray-50">
+        <p class="text-gray-400 text-[10px] uppercase tracking-widest mb-8">Ready to start a project?</p>
+        <a href="contact.html" class="inline-block bg-navy text-white px-14 py-4 text-[10px] font-bold tracking-[0.4em] rounded-full hover:bg-orange-500 transition-all duration-500 shadow-xl shadow-navy/10">
+            CONTACT US
+        </a>
+    </footer>
+
+   <footer class="bg-slate-950 py-16 text-white border-t border-white/5">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-4 mb-10">
+                <a href="#" class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-blue-600 transition-all"><i class="fa-brands fa-facebook-f text-lg"></i></a>
+                <a href="#" class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-blue-400 transition-all"><i class="fa-brands fa-linkedin-in text-lg"></i></a>
+                <a href="#" class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-red-600 transition-all"><i class="fa-brands fa-youtube text-lg"></i></a>
+            </div>
+            <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.3em] mb-4">AIT Engineering and Service</p>
+            <p class="text-slate-600 text-[10px] leading-relaxed">
+                75/76 ,Soi Romklao 1, Saensaep Minburi, Bangkok, 10510 Thailand.<br>
+                © 2026 AIT Engineering. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

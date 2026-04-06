@@ -6,6 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1516937941344-00b4e0337589?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
     <title>AIT Engineering and Service</title>
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -61,42 +62,44 @@
         </div>
     </header>
 
-    <section class="hero-bg h-[550px] relative flex items-center">
-        <div class="container mx-auto px-6">
-            <div class="max-w-2xl">
-                <div class="h-1 w-12 bg-orange-500 mb-6"></div>
-                <h1 class="text-white text-5xl md:text-6xl font-bold leading-tight mb-4 tracking-tight">
-                    Reliable <span class="text-blue-400">Engineering</span> Solutions.
-                </h1>
-                <p class="text-slate-300 text-lg font-light tracking-wide mb-8">
-                    Providing high-quality instruments and actuation technologies for sustainable industries since 2002.
-                </p>
-                <div class="flex space-x-4">
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-bold text-xs uppercase tracking-widest transition shadow-lg shadow-blue-900/20">
-                        Our Products
-                    </button>
-                    <button class="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-md font-bold text-xs uppercase tracking-widest transition">
-                        Contact Us
-                    </button>
-                </div>
+    <section class="hero-bg h-[550px] relative flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-black/40"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-2xl">
+            <div class="h-1 w-12 bg-orange-500 mb-6"></div>
+            <h1 class="text-white text-5xl md:text-6xl font-bold leading-tight mb-4 tracking-tight">
+                Reliable <span class="text-blue-400">Engineering</span> Solutions.
+            </h1>
+            <p class="text-slate-200 text-lg font-light tracking-wide mb-8">
+                Providing high-quality instruments and actuation technologies for sustainable industries since 2002.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md font-bold text-xs uppercase tracking-widest transition shadow-lg shadow-blue-900/20">
+                    Our Products
+                </button>
+                <button class="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-md font-bold text-xs uppercase tracking-widest transition">
+                    Contact Us
+                </button>
             </div>
         </div>
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30 animate-bounce">
-            <i class="fa-solid fa-arrow-down"></i>
-        </div>
-    </section>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white/30 animate-bounce">
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+</section>
 
-    <section class="bg-white py-14">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-wrap justify-center items-center gap-12 lg:gap-20 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition duration-700">
-                <img src="logo-01.png" class="h-8">
-                <img src="logo-02.png" class="h-8">
-                <img src="logo-03.png" class="h-9">
-                <img src="logo-04.png" class="h-7">
-                <img src="logo-05.png" class="h-9">
-            </div>
+<section class="bg-white py-16 border-b border-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center items-center gap-12 lg:gap-24 transition duration-700">
+            <img src="logo-01.png" class="h-12 md:h-14 object-contain" alt="Partner Logo">
+            <img src="logo-02.png" class="h-12 md:h-14 object-contain" alt="Partner Logo">
+            <img src="logo-03.png" class="h-14 md:h-16 object-contain" alt="Partner Logo">
+            <img src="logo-04.png" class="h-10 md:h-12 object-contain" alt="Partner Logo">
+            <img src="logo-05.png" class="h-14 md:h-16 object-contain" alt="Partner Logo">
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="py-16 bg-slate-50">
         <div class="container mx-auto px-6">
@@ -111,7 +114,7 @@
                     <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
                     <div class="absolute bottom-8 left-8">
                         <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
-                        <h3 class="text-white text-lg font-bold">Measurement Systems</h3>
+                        <h3 class="text-white text-lg font-bold">Measurement & Instrumentation</h3>
                     </div>
                 </div>
                 <div class="group relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-sm">
@@ -119,23 +122,23 @@
                     <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
                     <div class="absolute bottom-8 left-8">
                         <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
-                        <h3 class="text-white text-lg font-bold">Valves & Actuators</h3>
+                        <h3 class="text-white text-lg font-bold">Machines & Process Systems</h3>
                     </div>
                 </div>
                  <div class="group relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-sm">
-                    <img src="4-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
-                    <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
-                    <div class="absolute bottom-8 left-8">
-                        <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
-                        <h3 class="text-white text-lg font-bold">Industrial Services</h3>
-                    </div>
-                </div>
-                <div class="group relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-sm">
                     <img src="3-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
                     <div class="absolute bottom-8 left-8">
                         <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
-                        <h3 class="text-white text-lg font-bold">Industrial Services</h3>
+                        <h3 class="text-white text-lg font-bold">Innovation</h3>
+                    </div>
+                </div>
+                <div class="group relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-sm">
+                    <img src="4-1.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
+                    <div class="absolute bottom-8 left-8">
+                        <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
+                        <h3 class="text-white text-lg font-bold">Valves & Accessories</h3>
                     </div>
                 </div>
                 <div class="group relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-sm">
@@ -143,7 +146,7 @@
                     <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
                     <div class="absolute bottom-8 left-8">
                         <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
-                        <h3 class="text-white text-lg font-bold">Industrial Services</h3>
+                        <h3 class="text-white text-lg font-bold">System & Equipment</h3>
                     </div>
                 </div>
                 <div class="group relative aspect-[4/3] overflow-hidden bg-slate-200 rounded-sm">
@@ -151,7 +154,7 @@
                     <div class="absolute inset-0 bg-slate-900/40 group-hover:bg-blue-900/60 transition duration-500"></div>
                     <div class="absolute bottom-8 left-8">
                         <p class="text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-1">Explore</p>
-                        <h3 class="text-white text-lg font-bold">Industrial Services</h3>
+                        <h3 class="text-white text-lg font-bold">Services</h3>
                     </div>
                 </div>
             </div>
@@ -168,19 +171,46 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-slate-50 rounded-xl flex items-center justify-center p-8 mb-4 border border-slate-50 group-hover:border-blue-100 group-hover:bg-white transition duration-300">
-                        <img src="WT707.jpg" alt="Product" class="max-h-full object-contain group-hover:scale-105 transition duration-500">
+                        <img src="p-0-1.jpg" alt="Product" class="max-h-full object-contain group-hover:scale-105 transition duration-500">
                     </div>
                     <h3 class="text-slate-800 text-[13px] font-bold uppercase tracking-wide group-hover:text-blue-600 transition">WT707 Series</h3>
                     <p class="text-slate-400 text-[11px] mt-1">Instrument Control</p>
                 </div>
                 <div class="group cursor-pointer">
                     <div class="aspect-square bg-slate-50 rounded-xl flex items-center justify-center p-8 mb-4 border border-slate-50 group-hover:border-blue-100 group-hover:bg-white transition duration-300">
-                        <img src="K20.jpg" alt="Product" class="max-h-full object-contain group-hover:scale-105 transition duration-500">
+                        <img src="p-0-2.jpg" alt="Product" class="max-h-full object-contain group-hover:scale-105 transition duration-500">
                     </div>
-                    <h3 class="text-slate-800 text-[13px] font-bold uppercase tracking-wide group-hover:text-blue-600 transition">Westlock K20</h3>
-                    <p class="text-slate-400 text-[11px] mt-1">Positioner Technology</p>
+                    <h3 class="text-slate-800 text-[13px] font-bold uppercase tracking-wide group-hover:text-blue-600 transition">Westlock K20 Electro-pneumatic</h3>
+                    <p class="text-slate-400 text-[11px] mt-1">Positioner – ATEX / IEC, NEC</p>
                 </div>
+                <div class="group cursor-pointer">
+                    <div
+                        class="aspect-square bg-slate-50 rounded-xl flex items-center justify-center p-8 mb-4 border border-slate-50 group-hover:border-blue-100 group-hover:bg-white transition duration-300">
+                        <img src="p-0-3.jpg" alt="Product"
+                            class="max-h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-slate-800 text-[13px] font-bold uppercase tracking-wide group-hover:text-blue-600 transition">Westlock ICoT 6000-Series</h3>
+                    <p class="text-slate-400 text-[11px] mt-1">Positioner and Position Transmitter</p>
                 </div>
+                <div class="group cursor-pointer">
+                    <div
+                        class="aspect-square bg-slate-50 rounded-xl flex items-center justify-center p-8 mb-4 border border-slate-50 group-hover:border-blue-100 group-hover:bg-white transition duration-300">
+                        <img src="p-0-4.png" alt="Product"
+                            class="max-h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-slate-800 text-[13px] font-bold uppercase tracking-wide group-hover:text-blue-600 transition">Westlock ICoT 5000-Series</h3>
+                    <p class="text-slate-400 text-[11px] mt-1">Intrinsically Safe, NEC Positioner</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div
+                        class="aspect-square bg-slate-50 rounded-xl flex items-center justify-center p-8 mb-4 border border-slate-50 group-hover:border-blue-100 group-hover:bg-white transition duration-300">
+                        <img src="p-0-5.png" alt="Product"
+                            class="max-h-full object-contain group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-slate-800 text-[13px] font-bold uppercase tracking-wide group-hover:text-blue-600 transition">Westlock Digital EPIC-2</h3>
+                    <p class="text-slate-400 text-[11px] mt-1">safety valves</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -221,100 +251,166 @@
         </div>
     </section>
 
-    <section class="py-24 bg-white">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div>
-                    <h2 class="text-orange-500 text-[12px] font-bold uppercase tracking-[0.3em] mb-4">Our Commitment</h2>
-                    <h3 class="text-slate-900 text-4xl font-bold leading-tight mb-8 tracking-tight">Creative Innovations for <br>Sustainable Industry.</h3>
-                    <p class="text-slate-600 leading-relaxed mb-8">
-                        Established in 2002, AIT Engineering and Service aims to be Thailand's leading instrument provider. We prioritize integrity and high-standard work without compromising safety.
+<section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+        <span class="text-green-600 font-bold tracking-[0.3em] uppercase text-[10px] mb-4 block">
+            Trusted Engineering Partner
+        </span>
+        
+        <h1 class="text-[#1a4066] text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight">
+            About <span class="text-green-600">AIT Engineering</span>
+        </h1>
+        
+        <div class="w-16 h-1 bg-orange-500 mx-auto mb-6 rounded-full"></div>
+        
+        <p class="text-gray-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed tracking-wide">
+            Leading instrument and service provider for Field Instruments, Analyzers, and <br class="hidden md:block">
+            Actuation Technologies in Thailand since 2002.
+        </p>
+    </div>
+</section>
+
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="w-full lg:w-5/12">
+                <div class="relative">
+                    <img src="Boss-2.png" alt="Management" class="rounded-2xl shadow-2xl relative z-10 w-full object-contain bg-gray-50 h-[450px]">
+                    <div class="absolute -bottom-10 -right-10 bg-orange-500 text-white p-8 rounded-2xl z-20 shadow-xl hidden md:block">
+                        <p class="text-4xl font-black">20+</p>
+                        <p class="text-xs uppercase tracking-widest font-bold opacity-80">Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full lg:w-7/12">
+                <h2 class="text-[#1a4066] text-3xl font-bold mb-6 uppercase">Company Profile</h2>
+                <div class="space-y-6 text-gray-600 leading-relaxed text-sm">
+                    <p class="text-lg text-gray-800 font-medium italic border-l-4 border-orange-500 pl-6">
+                        "We believe in values of people. We make customer trust us on quality work. We believe in integrity."
                     </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center mt-1">
-                                <i class="fa-solid fa-check text-blue-600 text-[10px]"></i>
-                            </div>
-                            <p class="text-sm text-slate-700 font-semibold">ISO Certified & Bureau Veritas Standards</p>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center mt-1">
-                                <i class="fa-solid fa-check text-blue-600 text-[10px]"></i>
-                            </div>
-                            <p class="text-sm text-slate-700 font-semibold">Highly Trained Technical Support Team</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <img src="https://via.placeholder.com/300x400" class="rounded-2xl shadow-2xl shadow-slate-200">
-                    <img src="https://via.placeholder.com/300x350" class="rounded-2xl mt-12">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-slate-50 border-y border-slate-100 overflow-hidden">
-        <div class="container mx-auto px-6">
-            <div class="flex items-center space-x-4 mb-16">
-                <h2 class="text-slate-900 text-xl font-bold uppercase tracking-[0.2em]">Our Journey</h2>
-                <div class="flex-grow h-[1px] bg-slate-200"></div>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <div class="relative border-l-2 border-slate-200 ml-4 md:ml-6 space-y-12">
+                    <p>
+                        AIT Engineering and Service Co., Ltd. was established with a clear vision: to provide high-standard engineering solutions to meet the growing demands of the industrial sector in Thailand.
+                    </p>
                     
-                    <div class="relative pl-8 group">
-                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-blue-600 group-hover:bg-blue-600 transition duration-300"></div>
-                        
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                            <span class="text-orange-500 font-extrabold text-sm tracking-widest uppercase">September 2002</span>
-                            <h4 class="text-slate-900 font-bold text-lg mt-1">Company Established</h4>
-                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">
-                                ก่อตั้งบริษัทอย่างเป็นทางการ เพื่อเป็นผู้นำด้านเครื่องมือวัด (Instruments) และงานบริการทางวิศวกรรมในประเทศไทย
-                            </p>
+                    <div class="grid md:grid-cols-2 gap-6 pt-6">
+                        <div class="p-6 bg-slate-50 rounded-xl border-b-4 border-blue-600">
+                            <h4 class="font-bold text-blue-900 mb-2 uppercase text-xs tracking-wider">Vision</h4>
+                            <p class="text-xs">Creative Innovations for Sustainable Industry.</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-xl border-b-4 border-green-600">
+                            <h4 class="font-bold text-green-900 mb-2 uppercase text-xs tracking-wider">Our Values</h4>
+                            <ul class="text-[11px] space-y-1">
+                                <li>• Family culture & Honesty</li>
+                                <li>• Integrity, and fairness</li>
+                                <li>• Continuous development</li>
+                                <li>• High safety standards</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="relative pl-8 group">
-                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-blue-600 group-hover:bg-blue-600 transition duration-300"></div>
-                        
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                            <span class="text-orange-500 font-extrabold text-sm tracking-widest uppercase">2012</span>
-                            <h4 class="text-slate-900 font-bold text-lg mt-1">Rayong Branch Expansion</h4>
-                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">
-                                เปิดศูนย์บริการสาขาระยอง เน้นความเชี่ยวชาญด้าน Valves & Actuators เพื่อรองรับอุตสาหกรรมหนักในเขตพื้นที่ภาคตะวันออก
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="relative pl-8 group">
-                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-blue-600 group-hover:bg-blue-600 transition duration-300"></div>
-                        
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                            <span class="text-orange-500 font-extrabold text-sm tracking-widest uppercase">2015</span>
-                            <h4 class="text-slate-900 font-bold text-lg mt-1">ISO & Bureau Veritas Certified</h4>
-                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">
-                                ยกระดับมาตรฐานการจัดการและการบริการสู่สากล ได้รับการรับรอง ISO ทั่วทั้งองค์กร
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="relative pl-8 group">
-                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-2 border-white ring-4 ring-blue-50 shadow-lg shadow-blue-200"></div>
-                        
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-blue-100 hover:shadow-md transition">
-                            <span class="text-blue-600 font-extrabold text-sm tracking-widest uppercase">2020 - Present</span>
-                            <h4 class="text-slate-900 font-bold text-lg mt-1">Creative Innovation Era</h4>
-                            <p class="text-slate-500 text-sm mt-3 leading-relaxed">
-                                มุ่งเน้นการนำนวัตกรรมและเทคโนโลยีใหม่ๆ มาปรับใช้ร่วมกับพาร์ทเนอร์ระดับโลก เพื่อการเติบโตอย่างยั่งยืนของอุตสาหกรรม
-                            </p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section class="py-24 bg-slate-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 uppercase">Company History</h2>
+            <p class="text-gray-500 text-sm mt-2">The growth and success of AIT over two decades</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto relative before:absolute before:inset-0 before:ml-5 md:before:mx-auto before:w-0.5 before:bg-gray-200">
+            
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-10">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <span class="text-[10px] font-bold">02</span>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <span class="text-blue-600 font-bold text-xl">2002</span>
+                    <p class="text-gray-600 text-xs mt-2 font-bold">AIT Engineering and Services was established.</p>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-10">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gray-200 group-hover:bg-blue-500 text-gray-500 group-hover:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition">
+                    <span class="text-[10px] font-bold">06</span>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <span class="text-gray-400 group-hover:text-blue-500 font-bold text-xl transition">2005 - 2006</span>
+                    <ul class="text-gray-500 text-xs mt-2 space-y-1">
+                        <li>• Added office in Banpong near SCG Packaging.</li>
+                        <li>• Appointed by Emerson Process Management as Local Partner.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-10">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-gray-200 group-hover:bg-green-500 text-gray-500 group-hover:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition">
+                    <span class="text-[10px] font-bold">15</span>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <span class="text-gray-400 group-hover:text-green-500 font-bold text-xl transition">2012 - 2015</span>
+                    <ul class="text-gray-500 text-xs mt-2 space-y-1">
+                        <li>• Expanded to Rayong with 500 sq.m workshop.</li>
+                        <li>• Passed Bureau Veritas Certification (ISO Standards).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-900 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                    <span class="text-[10px] font-bold">20</span>
+                </div>
+                <div class="w-[calc(100%-4rem)] md:w-[45%] p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition">
+                    <span class="text-blue-900 font-bold text-xl">2018 - 2020</span>
+                    <ul class="text-gray-500 text-xs mt-2 space-y-1">
+                        <li>• Signed contract with PMT S.r.l (Italy)</li>
+                        <li>• Signed contract with Airaghi S.r.l.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white border-y">
+    <div class="container mx-auto px-4">
+        <p class="text-center text-gray-400 text-xs font-bold uppercase tracking-[0.3em] mb-10">Our Strategic Partners</p>
+        <div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+            <span class="text-xl font-black text-gray-800">BETTIS</span>
+            <span class="text-xl font-black text-gray-800">ROSEMOUNT</span>
+            <span class="text-xl font-black text-gray-800">MICROMOTION</span>
+            <span class="text-xl font-black text-gray-800">SHAFER</span>
+            <span class="text-xl font-black text-gray-800">HYTORK</span>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white overflow-hidden">
+    <div class="container mx-auto px-4 text-center">
+        
+        <div class="mb-10 mt-10">
+            <h2 class="text-[#1a5d2c] text-3xl font-bold uppercase tracking-tight mb-2">Accomplishment</h2>
+            <div class="w-full border-t border-dotted border-gray-300 max-w-4xl mx-auto mb-4"></div>
+            
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold">
+                PTTGC BRANCH#6 REFINERY PLANT TURNAROUND PROJECT
+            </p>
+        </div>
+
+        <div class="flex justify-center mb-20">
+            <div class="relative max-w-4xl w-full">
+                <div class="bg-white p-2 shadow-xl shadow-gray-200/50 rounded-sm">
+                    <img src="Cert.PTT.jpg" alt="PTTGC Certificate of Achievement" class="w-full h-auto block border border-gray-100">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <section class="bg-blue-900 pt-16 pb-24">
         <div class="container mx-auto px-6">
